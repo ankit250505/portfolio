@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ankit Dabral — Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ankit.dabral</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">Available for opportunities</div>
+        <h1 class="hero-name">
+          <span>Ankit</span>
+          <span class="accent">Dabral.</span>
+        </h1>
+        <p class="hero-desc">
+          I build things that matter — from AI-powered platforms to clean web experiences. Currently studying, always shipping.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/ankit250505" target="_blank" class="btn btn-ghost">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ankit-dabral250505" target="_blank" class="btn btn-ghost">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="card-line">
+            <span class="cl-key">name</span>
+            <span class="cl-string">"Ankit Dabral"</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">role</span>
+            <span class="cl-string">"Software Engineer"</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">focus</span>
+            <span class="cl-string">"AI / Backend / Web"</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">stack</span>
+            <span class="cl-arr">["Python", "C#", "React"]</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">learning</span>
+            <span class="cl-string">"ML & AI Systems"</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">status</span>
+            <span class="cl-num">open_to_work: true</span>
+          </div>
+          <div class="card-line">
+            <span class="cl-key">location</span>
+            <span class="cl-string">"Delhi, India"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span class="scroll-text">scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container section-wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">About me</div>
+        <h2 class="section-title">Curious by nature.<br/>Builder by choice.</h2>
+        <p>
+          I'm <strong>Ankit Dabral</strong>, a BCA student from Delhi with a deep interest in building intelligent, functional software. I gravitate toward the intersection of AI and full-stack development.
+        </p>
+        <p>
+          My work spans healthcare platforms, expense trackers, and machine learning models — always focused on <strong>real-world impact</strong> over complexity for its own sake.
+        </p>
+        <p>
+          When I'm not coding, I'm competing in hackathons, exploring new tools, or mentoring others. I believe great software starts with understanding people first.
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="mailto:ankitdabral724@gmail.com" class="btn btn-ghost" style="display:inline-flex;">
+            Get in touch →
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay: 0.15s;">
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Hackathon Finals</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Cups of Chai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container section-wrap">
+    <div class="reveal">
+      <div class="section-label">Toolkit</div>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-sub">The tools I reach for when building things that work.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal" style="--cat-color: #ff4d4d; transition-delay:0.05s;">
+        <div class="skill-cat-title">// Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal" style="--cat-color: #7c3aed; transition-delay:0.1s;">
+        <div class="skill-cat-title">// Web & Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">ASP.NET Core</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">MVC</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Entity Framework</span>
+          <span class="skill-tag">MERN Stack</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal" style="--cat-color: #3b82f6; transition-delay:0.15s;">
+        <div class="skill-cat-title">// AI / ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">Gemini API</span>
+          <span class="skill-tag">Model Evaluation</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal" style="--cat-color: #a8e6cf; transition-delay:0.2s;">
+        <div class="skill-cat-title">// Tools & Practices</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Clean Architecture</span>
+          <span class="skill-tag">SOLID</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container section-wrap">
+    <div class="reveal">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Things I've built — from AI healthcare to intelligent expense tracking.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" style="transition-delay:0.05s;">
+        <div class="project-header">
+          <div class="project-icon">🏥</div>
+          <div class="project-links">
+            <a href="https://github.com/ankit250505" target="_blank" class="project-link" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">MedEase</h3>
+        <p class="project-desc">An AI-powered healthcare platform built for real people. Includes a symptom checker, medical image analyzer, and live hospital booking — all in one place. Reports are summarized in plain language, not medical jargon.</p>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">NLP</span>
+          <span class="stack-badge">Gemini API</span>
+          <span class="stack-badge">ASP.NET Core</span>
+          <span class="stack-badge">SQL Server</span>
+          <span class="stack-badge">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.1s;">
+        <div class="project-header">
+          <div class="project-icon">💰</div>
+          <div class="project-links">
+            <a href="https://github.com/ankit250505" target="_blank" class="project-link" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">SpendSense</h3>
+        <p class="project-desc">A secure, user-based expense tracker with a clean MVC architecture. Built to help people understand where their money goes — with proper authentication, category breakdowns, and a smooth UI.</p>
+        <div class="project-stack">
+          <span class="stack-badge">ASP.NET Core</span>
+          <span class="stack-badge">C#</span>
+          <span class="stack-badge">MVC</span>
+          <span class="stack-badge">SQL Server</span>
+          <span class="stack-badge">HTML/CSS/JS</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.15s;">
+        <div class="project-header">
+          <div class="project-icon">❤️</div>
+          <div class="project-links">
+            <a href="https://github.com/ankit250505" target="_blank" class="project-link" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">CardioVascular Disease Prediction</h3>
+        <p class="project-desc">A machine learning model that predicts cardiovascular disease risk using patient data. Explores data preprocessing, feature engineering, and model evaluation with Scikit-learn — turning raw data into actionable health insights.</p>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">Scikit-learn</span>
+          <span class="stack-badge">Pandas</span>
+          <span class="stack-badge">NumPy</span>
+          <span class="stack-badge">Data Preprocessing</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / EDUCATION -->
+<section id="experience">
+  <div class="container section-wrap">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;">
+
+      <div>
+        <div class="reveal">
+          <div class="section-label">Journey</div>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline" style="margin-top: 3rem;">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 – Present</div>
+            <div class="timeline-title">BCA — Computer Science</div>
+            <div class="timeline-org">GGSIPU, Delhi</div>
+            <div class="timeline-detail">Specialization in AI & Software Engineering</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--purple); box-shadow: 0 0 12px rgba(124,58,237,0.5);"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-title">Class XII — PCM (CBSE)</div>
+            <div class="timeline-org">Sun Valley International School, Vaishali</div>
+            <div class="timeline-detail">80% · Physics, Chemistry, Maths</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--blue); box-shadow: 0 0 12px rgba(59,130,246,0.5);"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-title">Class X (CBSE)</div>
+            <div class="timeline-org">Sun Valley International School, Vaishali</div>
+            <div class="timeline-detail">93%</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal" style="transition-delay:0.1s;">
+          <div class="section-label">Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="timeline" style="margin-top: 3rem;">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Corizo × Wipro CPP</div>
+            <div class="timeline-title">Artificial Intelligence Training</div>
+            <div class="timeline-org">Corizo (CPP of Wipro)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--purple); box-shadow: 0 0 12px rgba(124,58,237,0.5);"></div>
+            <div class="timeline-date">Igikai Lab Pvt. Ltd.</div>
+            <div class="timeline-title">MERN Full Stack Development</div>
+            <div class="timeline-org">Igikai Lab Pvt. Ltd.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--blue); box-shadow: 0 0 12px rgba(59,130,246,0.5);"></div>
+            <div class="timeline-date">IITM College, GGSIPU</div>
+            <div class="timeline-title">Web Dev with MERN Stack</div>
+            <div class="timeline-org">IITM College, GGSIPU</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: #a8e6cf; box-shadow: 0 0 12px rgba(168,230,207,0.4);"></div>
+            <div class="timeline-date">Corizo × Wipro CPP</div>
+            <div class="timeline-title">Cybersecurity Internship Program</div>
+            <div class="timeline-org">Corizo (CPP of Wipro)</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem;" class="reveal">
+          <div style="font-family: var(--mono); font-size: 0.7rem; color: var(--red); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.25rem;">// Hackathons</div>
+          <div class="hackathon-grid">
+            <div class="hack-card">
+              <div class="hack-icon">⚡</div>
+              <div>
+                <div class="hack-name">NEXHACK 2.0</div>
+                <span class="hack-badge">Final Round Qualifier</span>
+              </div>
+            </div>
+            <div class="hack-card">
+              <div class="hack-icon">🇮🇳</div>
+              <div>
+                <div class="hack-name">Smart India Hackathon</div>
+                <span class="hack-badge">Internal Round Qualifier</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container section-wrap">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-sub" style="margin: 1rem auto 0;">
+          Open to internships, collaborations, and interesting problems. If you're working on something cool — reach out.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ankitdabral724@gmail.com" class="contact-link primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            ankitdabral724@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/ankit-dabral250505" target="_blank" class="contact-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ankit250505" target="_blank" class="contact-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed & built by <span>Ankit Dabral</span> · 2025</p>
+</footer>
+
+ <script src="./script.js"></script>
+</body>
+</html>
